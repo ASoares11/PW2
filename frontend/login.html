@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login & Signup Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="w-60">
+        <div class="form-group">
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Username" id="username">
+        </div>
+        <div class="form-group">
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Password" id="password">
+        </div>
+      </div>
+      <div class="form-group">
+      <div class="px-2 py-2 hover:brightness-75 transition-all cursor-pointer">
+        <button type="button" onclick="login()">Login</button>
+      </div>
+    </div>
+    </form>
+  </div>
+
+  </div>
+
+  <script>
+
+
+    async function login() {
+      const name = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Replace with your login endpoint URL
+      const url = 'http://localhost:3333/login';
+
+      const requestBody = { name, password };
+
+      const data = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestBody),
+      })
+
+      const response = await data.json();
+
+      localStorage.setItem('token', response.token);
+      window.location.href = '/';
+    }
+
+  </script>
+</body>
+
+</html>

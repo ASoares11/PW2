@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CV Website</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+    </head>
+
+    <body>
+        <div class="flex flex-col min-h-screen">
+            <header class="flex bg-gray-400 w-full py-5 text-xl justify-evenly items-center">
+                <div class="text-2xl font-bold">
+                    Portefolio Afonso Soares
+                </div>
+                <a class="cursor-pointer px-4 py-2 bg-slate-500 rounded-md text-white" href="login.html">
+                    Login
+                </a>
+
+            </header>
+            <main class="flex flex-1 flex-col">
+                <div class="flex w-full flex-1" id="user">
+                    <div class="flex flex-1 w-1/2 ">
+                        <div class="flex flex-col items-center m-4 rounded-lg bg-gray-300 w-full justify-evenly">
+                            <div class="flex flex-col gap-4">
+                                <input class="text-5xl font-bold px-5 py-2 rounded-2xl" id="name" value="Afonso Soares"
+                                    disabled />
+                                <input class="text-2xl  px-5 py-2 rounded-2xl" id="age" value="Idade: 20 anos"
+                                    disabled />
+                                <input class="text-2xl px-5 py-2 rounded-2xl" id="angola"
+                                    value="Nacionalidade: Angolana" disabled />
+                            </div>
+                            <div>
+
+
+                                <div class="text-5xl font-bold">
+                                    Percurso Académico
+                                </div>
+                                <div id="academico" class="mt-2">
+                                    <div class="flex flex-col gap-2">
+
+                                        <input class="text-2xl px-5 py-2 rounded-2xl" id="academico1"
+                                            value="2018 - 2021" disabled />
+                                        <input class="text-2xl px-5 py-2 rounded-2xl" id="academico2"
+                                            value="Universidade Metodista de Angola" disabled />
+                                        <input class="text-2xl px-5 py-2 rounded-2xl" id="academico3"
+                                            value="Licenciatura em Engenharia Informática" disabled />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-1/2">
+                        <div class="flex flex-col items-center m-4 rounded-lg bg-gray-300 w-full justify-evenly">
+                            <div class="profissional">
+                                <div class="text-5xl font-bold">
+                                    Experiência Profissional
+                                </div>
+                                <div id="profissional" class="mt-5">
+                                    <div class="flex flex-col gap-2">
+
+                                        <input class="text-2xl px-5 py-2 rounded-2xl" id="prof1" value="2018 - 2021"
+                                            disabled />
+                                        <input class="text-2xl px-5 py-2 rounded-2xl" id="prof2"
+                                            value="Universidade Metodista de Angola" disabled />
+                                        <input class="text-2xl px-5 py-2 rounded-2xl" id="prof3"
+                                            value="Licenciatura em Engenharia Informática" disabled />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-1 w-full" id="admin">
+                    <div class="flex flex-1 w-1/2">
+                        <div class="flex flex-col items-center m-4 rounded-lg bg-gray-300 w-full justify-evenly">
+                            <div class="flex flex-col gap-4">
+                                <input class="text-5xl font-bold px-5 py-2 rounded-2xl" id="ename"
+                                    value="Afonso Soares" />
+                                <input class="text-2xl  px-5 py-2 rounded-2xl" id="eage" value="Idade: 20 anos" />
+                                <input class="text-2xl px-5 py-2 rounded-2xl" id="eangola"
+                                    value="Nacionalidade: Angolana" />
+                            </div>
+                            <div>
+
+
+                                <div class="text-5xl font-bold">
+                                    Percurso Académico
+                                </div>
+                                <div id="academico" class="mt-2">
+                                    <div class="flex flex-col gap-2">
+
+                                        <input class="text-2xl px-5 py-2 rounded-2xl" id="eacademico1"
+                                            value="2018 - 2021" />
+                                        <input class="text-2xl px-5 py-2 rounded-2xl" id="eacademico2"
+                                            value="Universidade Metodista de Angola" />
+                                        <input class="text-2xl px-5 py-2 rounded-2xl" id="eacademico3"
+                                            value="Licenciatura em Engenharia Informática" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-1 w-1/2">
+                        <div class="flex flex-col items-center m-4 rounded-lg bg-gray-300 w-full justify-evenly">
+                            <div>
+                                <div class="text-5xl font-bold">
+                                    Experiência Profissional
+                                </div>
+                                <div id="profissional" class="mt-5">
+                                    <div class="flex flex-col gap-2" >
+
+                                        <input class="text-2xl px-5 py-2 rounded-2xl" id="eprof1" value="2018 - 2021" />
+                                        <input class="text-2xl px-5 py-2 rounded-2xl" id="eprof2"
+                                            value="Universidade Metodista de Angola" />
+                                        <input class="text-2xl px-5 py-2 rounded-2xl" id="eprof3"
+                                            value="Licenciatura em Engenharia Informática" />
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="w-20 h-10 bg-green-500 flex text-white font-bold  justify-center items-center rounded-full" id="save">
+                                Save
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </main>
+
+
+            <footer class="flex justify-center px-40 h-10 items-center bg-gray-300 select-none">
+                <p>&copy; 2023 My CV. All rights reserved.</p>
+            </footer>
+
+            <script src="script.js"></script>
+    </body>
+
+
+</html>
